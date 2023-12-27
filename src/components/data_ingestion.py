@@ -34,7 +34,7 @@ class DataIngestion:
 
             test_data.to_csv(self.ingestiona_config.test_data_path, index=False, header=True)
 
-            logging.ingo("Data Ingestion is completed")
+            logging.info("Data Ingestion is completed")
 
             return (
                 self.ingestiona_config.train_data_path,
