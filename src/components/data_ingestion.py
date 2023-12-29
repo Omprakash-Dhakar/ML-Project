@@ -21,7 +21,7 @@ class DataIngestionConfig:
 
 class DataIngestion:
     def __init__(self):
-        self.ingestiona_config = DataIngestionConfig()
+        self.ingestion_config = DataIngestionConfig()
 
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or components")
@@ -43,8 +43,8 @@ class DataIngestion:
             logging.info("Data Ingestion is completed")
 
             return (
-                self.ingestiona_config.train_data_path,
-                self.ingestiona_config.test_data_path
+                self.ingestion_config.train_data_path,
+                self.ingestion_config.test_data_path
             )
 
         except Exception as e:
